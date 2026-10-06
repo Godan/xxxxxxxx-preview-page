@@ -10,13 +10,13 @@ export type Work = {
   body: string[];
 };
 
-export const WORK_TYPES = ["すべて", "XX", "XX・ああ", "あああ", "あああ", "ああ・ああああ", "あああああ"];
+export const WORK_TYPES = ["すべて", "3DCG", "VTuber", "企画・プロデュース", "コンサル"];
 
 export const WORKS: Work[] = [
   {
     id: "w001",
     title: "「ああああああああ」あああああああああ",
-    type: "XX",
+    type: "3DCG",
     year: "0000",
     parts: "0XXXあああああ / ああああああ / ああああああ",
     client: "あああああああああ・ああああ",
@@ -31,7 +31,7 @@ export const WORKS: Work[] = [
   {
     id: "w002",
     title: "ああXX「あああ」ああああああ",
-    type: "XX・ああ",
+    type: "VTuber",
     year: "0000",
     parts: "あああああああ / あああああ / ああああああ",
     client: "あああああああああああ",
@@ -46,7 +46,7 @@ export const WORKS: Work[] = [
   {
     id: "w003",
     title: "『あああああ・あああ』あああああああああああああ",
-    type: "あああ",
+    type: "企画・プロデュース",
     year: "0000",
     parts: "ああああ / あああああああああああああ / あああああ",
     client: "あああああああああああああ",
@@ -61,7 +61,7 @@ export const WORKS: Work[] = [
   {
     id: "w004",
     title: "ああああ「ああああああ」ああああ",
-    type: "ああ・ああああ",
+    type: "コンサル",
     year: "0000",
     parts: "ああ / 0XXXああ / あああああああああああああ",
     client: "あああああああああ",
@@ -76,7 +76,7 @@ export const WORKS: Work[] = [
   {
     id: "w005",
     title: "あああああああああああ「ああああ」0Xあああああ",
-    type: "あああああ",
+    type: "3DCG",
     year: "0000",
     parts: "あああああああああああ / ああああ / ああああ",
     client: "あああああああああああああああ",
@@ -91,7 +91,7 @@ export const WORKS: Work[] = [
   {
     id: "w006",
     title: "XXあああ『あああああああ』XX 0XXXあああ",
-    type: "あああ",
+    type: "VTuber",
     year: "0000",
     parts: "ああ0XXX / ああああああ / ああああ",
     client: "ああああ・ああああ",
@@ -106,7 +106,7 @@ export const WORKS: Work[] = [
   {
     id: "w007",
     title: "あああああ「XXXXX XXX」ああああああああ",
-    type: "ああ・ああああ",
+    type: "3DCG",
     year: "0000",
     parts: "XXああああ / ああああああああああ",
     client: "XXXXX XXX あああああ",
@@ -121,7 +121,7 @@ export const WORKS: Work[] = [
   {
     id: "w008",
     title: "ああああああああ「あああああああ」",
-    type: "XX・ああ",
+    type: "企画・プロデュース",
     year: "0000",
     parts: "あああああああああああああ / ああああああ",
     client: "あああああああああああ",
@@ -136,7 +136,7 @@ export const WORKS: Work[] = [
   {
     id: "w009",
     title: "あああああああああ『あああああ』",
-    type: "あああああ",
+    type: "コンサル",
     year: "0000",
     parts: "ああ / ああ / ああああ",
     client: "ああああ",
