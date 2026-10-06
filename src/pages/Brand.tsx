@@ -44,7 +44,7 @@ export function Brand() {
             ブランド公式サイト（外部・リンク先未定）
           </a>
           <a href="#" className="btn btn--lg" onClick={(e) => e.preventDefault()}>
-            オンラインストア（外部・リンク先未定）
+            Boothストア（外部・リンク先未定）
           </a>
         </div>
       </Section>
