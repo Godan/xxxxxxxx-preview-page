@@ -2,7 +2,7 @@ import { useEffect, useId, useState } from "react";
 import { useLocation, type Location } from "react-router";
 
 /** ワイプ片道の時間（覆う → 開く でこの2倍）。本番の演出に差し替える際はここを変更する */
-const WIPE_MS = 600;
+export const WIPE_MS = 600;
 
 /** 波紋の中心を画面外のどこに置くか（弧が横切る辺の長さに対する倍率）。大きいほど弧がゆるやかになる */
 const ORIGIN_OFFSET_RATIO = 2;
@@ -26,7 +26,7 @@ const easeInOutCubic = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2
  * 波紋の中心。PC は画面の左外（縦中央）、SP は画面の下外（横中央）。
  * 弧が横切る辺（PC は縦の辺、SP は横の辺）の長さに比例して離すことで、どちらも同じくらいのカーブになる。
  */
-const rippleOrigin = (): Point => {
+export const rippleOrigin = (): Point => {
   const w = window.innerWidth;
   const h = window.innerHeight;
   return window.matchMedia(SP_QUERY).matches
@@ -85,7 +85,7 @@ export function usePageTransition() {
   return { displayLocation, wipe };
 }
 
-function RippleWipe({ phase, origin }: { phase: "cover" | "reveal"; origin: Point }) {
+export function RippleWipe({ phase, origin }: { phase: "cover" | "reveal"; origin: Point }) {
   const maskId = useId();
   const [t, setT] = useState(0);
 
